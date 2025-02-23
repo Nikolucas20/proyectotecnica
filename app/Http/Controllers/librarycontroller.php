@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Libreria;
-use Illuminate\Support\Facade\Validator;
+use Illuminate\Support\Facades\Validator;
 
 class librarycontroller extends Controller
 {
