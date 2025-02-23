@@ -7,16 +7,12 @@ use App\Http\Controllers\librarycontroller;
 
 Route::get('/library', [librarycontroller::class, 'index']);
 
-Route::get('/library/{id}',function (){
-    return 'obteniendo estudiante';
-});
+Route::get('/library/{id}',[librarycontroller::class, 'show']);
 
 Route::post('/library',[librarycontroller::class, 'store']);
 
-Route::put('/library/{id}',function (){
-    return 'actualizando';
-});
+Route::put('/library/{id}',[librarycontroller::class, 'update']);
 
-Route::delete('/library/{id}',function (){
-    return 'actualizando';
-});
+Route::patch('/library/{id}',[librarycontroller::class, 'updatePartial']);
+
+Route::delete('/library/{id}',[librarycontroller::class, 'destroy']);
