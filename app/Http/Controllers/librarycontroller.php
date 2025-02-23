@@ -23,7 +23,7 @@ class librarycontroller extends Controller
             'nombre' => 'required|max:255',
             'genero' => 'required|max:155',
             'autor' => 'required|max:300',
-            'lenguaje' => 'required|in:English,Spanish,French'
+            'lenguaje' => 'required|in:Ingles,Español,Frances'
         ]);
 
         if($validator->fails()){
@@ -110,7 +110,7 @@ class librarycontroller extends Controller
             'nombre' => 'required|max:255',
             'genero' => 'required|max:155',
             'autor' => 'required|max:300',
-            'lenguaje' => 'required|in:English,Spanish,French'
+            'lenguaje' => 'required|in:Ingles,Español,Frances'
         ]);
 
         if($validator->fails()){
